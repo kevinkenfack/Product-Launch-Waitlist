@@ -30,9 +30,9 @@ export async function joinWaitlist(prevState: any, formData: FormData) {
     // Send welcome email using Resend
     const { data, error } = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>",
-      to: email.toString(),
+      to: "kenfackjoelkevin@yahoo.com",
       subject: "Welcome to Our Waitlist!",
-      html: EmailTemplate({ email: email.toString() }),
+      html: EmailTemplate({ email: "kenfackjoelkevin@yahoo.com" }),
     })
 
     if (error) {
